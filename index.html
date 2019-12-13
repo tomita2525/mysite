@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>mysite</title>
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
   </head>
 
   <body>
@@ -20,12 +22,32 @@
         </div>
       </header>
 
+      <div class="login-modal-wrapper" id="login-modal">
+        <div class="modal">
+          <div class="close-modal">
+            <!-- <i class="fa fa-2x fa-times"></i> -->
+            <span class="fa fa-2x fa-times">×</span>
+          </div>
+          <div id="login-form">
+            <h2>Emailログイン</h2>
+            <form action="#">
+              <input class="form-control" type="text" placeholder="メールアドレス">
+              <input class="form-control" type="password" placeholder="パスワード">
+              <div id="submit-btn">ログイン</div>
+            </form>
+          </div>
+        </div>
+      </div>
+
       <div class="top-wrapper">
         <div class="container">
           <h1>LEARN TO CODE.</h1>
           <h1>LEARN TO BE CREATIVE.</h1>
-          <p>Progateはオンラインプログラミング学習サービスです。</p>
-          <p>初心者にもやさしいスライドとレッスンで、Webサービスを作りながらプログラミングを学んでいきましょう。</p>
+          <p>ピーナッツコミックには、たくさんの個性的なメンバー（PEANUTS Friends）が登場します。</p>
+          <p>「ピーナッツ」の真の魅力はコミックに描かれている仲間達とその人間模様です。
+              それぞれの関係性や日々のやりとりは私たちの実社会の縮図さながら。
+              シュルツさんは、実社会を子供たちの世界というシンプルな設定に置き換え、
+              常に温かい眼差しをもって描いてきたのです。</p>
           <div class="btn-wrapper">
             <a href="#" class="btn signup">新規登録はこちら</a>
             <p>or sign up with</p>
@@ -88,5 +110,8 @@
         </div>
       </footer>
 
+      <script type="text/javascript" src="src/js/script.js">
+
+      </script>
   </body>
 </html>

@@ -5,41 +5,64 @@
   <meta charset="utf-8">
   <title>アコーディオン</title>
   <link rel="stylesheet" href="css/accordion.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/accordion.js"></script>
 </head>
 
 <body>
 
   <div class="box" id="abc"></div>
+  <h1>test</h1>
 
   <div id="accordion">
-    <ul　class="accordion-menu">
-      <li class="acd_menu_head">グループ1</li>
-      <div class="acd_menu_body group_one">
-        <li class="item">アイテム1</li>
-        <li class="item">アイテム2</li>
-      </div>
-    </ul>
-    <ul　class="accordion-menu">
-      <li class="acd_menu_head">グループ2</li>
-      <div class="acd_menu_body group_two">
-        <li class="item">アイテム1</li>
-        <li class="item">アイテム2</li>
-        <li class="item">アイテム3</li>
-      </div>
-    </ul>
-    <ul　class="accordion-menu">
-      <li class="acd_menu_head">グループ3</li>
-      <div class="acd_menu_body group_three">
-        <li class="item">アイテム1</li>
-        <li class="item">アイテム2</li>
-        <li class="item">アイテム3</li>
-        <li class="item">アイテム4</li>
-      </div>
+    <p>素のJavaScript</p>
+    <div class="acd_menu_head">グループ1</div>
+    <ul class="acd_menu_body">
+      <li class="item">アイテム1</li>
+      <li class="item">アイテム2</li>
     </ul>
 
+    <div class="acd_menu_head">グループ2</div>
+    <ul class="acd_menu_body">
+      <li class="item">アイテム1</li>
+      <li class="item">アイテム2</li>
+      <li class="item">アイテム3</li>
+    </ul>
+
+    <div class="acd_menu_head">グループ3</div>
+    <ul class="acd_menu_body">
+      <li class="item">アイテム1</li>
+      <li class="item">アイテム2</li>
+      <li class="item">アイテム3</li>
+    </ul>
   </div>
 
-  <script type="text/javascript" src="js/accordion.js"></script>
+  <div id="accordion">
+    <p>jQuery</p>
+    <div class="j_acd_menu_head">グループ1</div>
+    <ul class="j_acd_menu_body">
+      <li class="item">アイテム1</li>
+      <li class="item">アイテム2</li>
+    </ul>
+
+
+    <div class="j_acd_menu_head">グループ2</div>
+    <ul class="j_acd_menu_body">
+      <li class="item">アイテム1</li>
+      <li class="item">アイテム2</li>
+      <li class="item">アイテム3</li>
+    </ul>
+
+    <div class="j_acd_menu_head">グループ3</div>
+    <ul class="j_acd_menu_body">
+      <li class="item">アイテム1</li>
+      <li class="item">アイテム2</li>
+      <li class="item">アイテム3</li>
+    </ul>
+  </div>
+
+
+
 </body>
 
 </html>

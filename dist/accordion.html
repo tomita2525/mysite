@@ -3,65 +3,107 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>アコーディオン</title>
   <link rel="stylesheet" href="css/accordion.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/accordion.js"></script>
 </head>
 
 <body>
 
-  <div class="box" id="abc"></div>
-  <h1>test</h1>
+  <div class="container">
+    <div class="box" id="abc"></div>
+    <h1>test</h1>
 
-  <div id="accordion">
-    <p>素のJavaScript</p>
-    <div class="acd_menu_head">グループ1</div>
-    <ul class="acd_menu_body">
-      <li class="item">アイテム1</li>
-      <li class="item">アイテム2</li>
-    </ul>
+    <div class="accordion">
+      <p>素のJavaScript</p>
+      <div class="acd_menu_head">グループ1</div>
+      <ul class="acd_menu_body">
+        <li class="item">アイテム1</li>
+        <li class="item">アイテム2</li>
+      </ul>
 
-    <div class="acd_menu_head">グループ2</div>
-    <ul class="acd_menu_body">
-      <li class="item">アイテム1</li>
-      <li class="item">アイテム2</li>
-      <li class="item">アイテム3</li>
-    </ul>
+      <div class="acd_menu_head">グループ2</div>
+      <ul class="acd_menu_body">
+        <li class="item">アイテム1</li>
+        <li class="item">アイテム2</li>
+        <li class="item">アイテム3</li>
+      </ul>
 
-    <div class="acd_menu_head">グループ3</div>
-    <ul class="acd_menu_body">
-      <li class="item">アイテム1</li>
-      <li class="item">アイテム2</li>
-      <li class="item">アイテム3</li>
-    </ul>
+      <div class="acd_menu_head">グループ3</div>
+      <ul class="acd_menu_body">
+        <li class="item">アイテム1</li>
+        <li class="item">アイテム2</li>
+        <li class="item">アイテム3</li>
+      </ul>
+      <!-- accordion -->
+    </div>
+
+    <div class="accordion">
+      <p>jQuery</p>
+      <div class="j_acd_menu_head">グループ1</div>
+      <ul class="j_acd_menu_body">
+        <li class="item">アイテム1</li>
+        <li class="item">アイテム2</li>
+      </ul>
+
+
+      <div class="j_acd_menu_head">グループ2</div>
+      <ul class="j_acd_menu_body">
+        <li class="item">アイテム1</li>
+        <li class="item">アイテム2</li>
+        <li class="item">アイテム3</li>
+      </ul>
+
+      <div class="j_acd_menu_head">グループ3</div>
+      <ul class="j_acd_menu_body">
+        <li class="item">アイテム1</li>
+        <li class="item">アイテム2</li>
+        <li class="item">アイテム3</li>
+      </ul>
+      <!-- accordion -->
+    </div>
+
+
+    <div class="accordion">
+      <p>HTMLのみ</p>
+      <details>
+        <summary>Quote1</summary>
+        You play with the cards you're dealt. Whatever that means.
+      </details>
+
+      <details>
+        <summary>Quote2</summary>
+        He says it's terrible to go through life wishing you were something else.
+      </details>
+
+      <details>
+        <summary>Quote3</summary>
+        There's nothing that can harm a person more than too much formal education!
+      </details>
+      <!-- accordion -->
+    </div>
+
+    <div class="accordion">
+      <div class="acc_box">
+        <!--ラベル1-->
+        <label for="label1">クリックして表示1</label>
+        <input type="checkbox" id="label1" class="css_acc" />
+        <div class="acc_show">
+          <!--ここに隠す中身-->
+          <p>
+            I need plenty of rest in case tomorrow is a great day.
+          </p>
+        </div>
+        <!--//ラベル1-->
+      </div>
+      <!-- accordion -->
+    </div>
+
+    <!-- container -->
   </div>
-
-  <div id="accordion">
-    <p>jQuery</p>
-    <div class="j_acd_menu_head">グループ1</div>
-    <ul class="j_acd_menu_body">
-      <li class="item">アイテム1</li>
-      <li class="item">アイテム2</li>
-    </ul>
-
-
-    <div class="j_acd_menu_head">グループ2</div>
-    <ul class="j_acd_menu_body">
-      <li class="item">アイテム1</li>
-      <li class="item">アイテム2</li>
-      <li class="item">アイテム3</li>
-    </ul>
-
-    <div class="j_acd_menu_head">グループ3</div>
-    <ul class="j_acd_menu_body">
-      <li class="item">アイテム1</li>
-      <li class="item">アイテム2</li>
-      <li class="item">アイテム3</li>
-    </ul>
-  </div>
-
-
 
 </body>
 

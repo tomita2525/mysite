@@ -1,0 +1,35 @@
+@media(max-width:1000px) {
+  h1{
+    color:red;
+  }
+
+  h1::after {
+    content: 'ブレイクポイント：1000px';
+  }
+}
+
+@media(max-width:670px) {
+  .acd_menu_head {
+    width: 60%;
+    padding:10px 0 10px 40px;
+    background-color:#DFE5DE;
+    border-radius:10px;
+    border:1px solid #FC8341;
+  }
+
+      .acd_menu_body {
+        width:50%;
+        padding:0px 0px 0px 15px;
+        border-left:17px solid #bababa;
+        margin:0 0 0 20px;
+        background-color:#F4F4F4;
+      }
+
+      h1{
+        color:blue;
+      }
+
+      h1::after {
+        content: "ブレイクポイント：670px";
+      }
+    }

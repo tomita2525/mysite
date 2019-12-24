@@ -8,7 +8,7 @@
     "scss": "node-sass --watch --include-path scss src/scss/style.scss dist/css/style.css --output-style compressed",
     "test-scss": "node-sass --watch --include-path scss src/scss/sample.scss dist/css/sample.css --output-style expanded",
     "server": "http-server",
-    "start": "concurrently \"server\" \"test-scss\""
+    "start": "concurrently \"npm run server\" \"npm run test-scss\""
   },
   "author": "",
   "license": "ISC",

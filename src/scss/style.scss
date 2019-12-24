@@ -1,4 +1,4 @@
-$my-color: #888888;
+$my-color: #f7f7f7;
 body {
     color: $my-color;
     margin: 0;
@@ -29,7 +29,7 @@ a {
     background-color: rgba(255, 255, 255, 0.3);
     transition: all 0.5s;
 
-    & :hover{
+    &:hover{
       background-color: rgba(255, 255, 255, 0.5);
     }
 
@@ -45,10 +45,12 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  // コンパイルされたcssファイルから見たパス
+  background-image: url(../../src/img/Peanuts-Group-Classic-Apple2.jpg);
   background-size: cover;
-  color: white;
+  color: black;
   text-align: center;
+
 
   h1{
     opacity: 0.7;
@@ -57,7 +59,8 @@ a {
   }
 
   p {
-    opacity: 0.7;
+    opacity: 1;
+    font-size: 18px;
   }
 }
 
@@ -93,7 +96,7 @@ a {
   opacity: 0.8;
   border-radius: 4px;
 
-  & :hover{
+  &:hover{
     opacity: 1;
   }
 }
@@ -109,6 +112,72 @@ header {
   z-index:10;
 }
 
+.login-modal-wrapper {
+  display: none;
+  // positionプロパティで要素の位置固定（指定）
+  position:fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+
+  .modal {
+    // position: absolute;は絶対配置を指定する値
+    // 今いる場所にかかわらず、原点からどれだけ離れた距離に配置されているのかを示す
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+
+
+    .fa-times {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      color: rgba(128, 128, 128, 0.46);
+      cursor: pointer;
+    }
+
+    #login-form {
+      width: 100%;
+
+      h2 {
+        color: #5f5d60;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+      }
+
+      input {
+        width: 320px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        padding: 12px 12px;
+        border: 1px solid #d0d5d8;
+        border-radius: 5px;
+      }
+
+      #submit-btn {
+        display: inline-block;
+        padding: 14px 140px;
+        background-color: #5dca88;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        margin: 10px auto;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
 .lesson-wrapper {
   height: 500px;
   padding-bottom: 80px;
@@ -118,26 +187,32 @@ header {
   .lesson {
     float: left;
     width: 25%;
-  }
 
-  .lesson-icon {
-    position: relative;
+    .lesson-icon {
+      position: relative;
 
-    p {
-      position: absolute;
-      top: 90px;
-      width: 100%;
-      color: white;
+      p {
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        color: white;
+      }
+    }
+
+    .txt-contents {
+      width: 80%;
+      display:none;
+      // display: inline-block;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #b3aeb5;
+    }
+
+    .txt-active {
+      display: inline-block;
     }
   }
 
-  .txt-contents {
-    width: 80%;
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #b3aeb5;
-  }
 }
 
 .heading {
@@ -154,6 +229,50 @@ header {
   }
 }
 
+.faq-wrapper {
+  background-color: #e6ecf0;
+  text-align: center;
+  padding-bottom: 80px;
+  color: #5f5d60;
+
+  #faq-list {
+    width: 540px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+
+    .faq-list-item {
+      margin:10px;
+      border-bottom:1px solid #ccc;
+      position:relative;
+      cursor:pointer;
+      text-align: left;
+
+      .faq-list-item h3 {
+        font-size: 16px;
+      }
+    }
+
+    .faq-list-item span {
+      position:absolute;
+      top:0;
+      right:5px;
+      color:#ccc;
+      font-size:13px;
+    }
+
+    .answer {
+      font-size: 14px;
+      padding: 5px 0px;
+      margin-bottom: 15px;
+      /* displayプロパティをnoneにしてください */
+      // display: none;
+    }
+  }
+}
+
+
+
 .message-wrapper {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
@@ -165,7 +284,7 @@ header {
     cursor: pointer;
     box-shadow: 0 7px #1a7940;
 
-    & :active {
+    &:active {
       position: relative;
       top: 7px;
       box-shadow: none;

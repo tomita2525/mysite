@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch --include-path scss src/scss/style.scss dist/css/style.css --output-style compressed",
+    "scss": "node-sass --watch --include-path scss src/scss/style.scss dist/css/style.css --output-style expanded",
     "test-scss": "node-sass --watch --include-path scss src/scss/sample.scss dist/css/sample.css --output-style expanded",
+    "accordion-scss": "node-sass --watch --include-path scss src/scss/accordion.scss dist/css/accordion.css --output-style expanded",
     "server": "http-server",
     "start": "concurrently \"npm run server\" \"npm run test-scss\""
   },

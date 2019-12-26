@@ -1,0 +1,141 @@
+$acd_menu_head_width: 400px;
+$acd_menu_head_padding: 10px 40px;
+$acd_menu_head_border-radius: 10px;
+
+body {
+  margin: 15px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  .box {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #949494;
+    background-color: #EBE2FF;
+  }
+
+  .circle {
+    border-radius: 50%;
+    background-color: #B2EAE8;
+  }
+
+  .accordion {
+    /* width:400px; */
+    width: 100%;
+    /* height:400px; */
+    padding: 25px;
+  }
+
+  .acd_menu_head {
+    width: $acd_menu_head_width;
+    padding: $acd_menu_head_padding;
+    border-radius: $acd_menu_head_border-radius;
+    background-color: #DFE5DE;
+    border: 1px solid #FC8341;
+  }
+
+  .j_acd_menu_head {
+    width: $acd_menu_head_width;
+    padding: $acd_menu_head_padding;
+    border-radius: $acd_menu_head_border-radius;
+    background-color: #e9e5fa;
+    border: 1px solid #f0f8ff;
+  }
+
+  .acd_menu_body,
+  .j_acd_menu_body {
+    width: 400px;
+    padding: 0 0 0 15px;
+    border-left: 17px solid #bababa;
+    margin: 0 0 0 20px;
+    background-color: #F4F4F4;
+  }
+
+  ul {
+    display: none;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  .open {
+    display: block;
+  }
+
+  .acc_box {
+    width: 300px;
+
+    .acc_show {
+      height: 0;
+      padding: 0;
+      /* overflow...ボックス内に収まり切らない内容を、どのように処理するかを指定するプロパティ */
+      overflow: hidden;
+      opacity: 0;
+      transition: 0.8s;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      display: block;
+      margin: 1.5px 0;
+      padding: 11px 12px;
+      color: #2f8fcf;
+      font-weight: bold;
+      background: #a4cbf3;
+      cursor: pointer;
+      /* transition...要素の2つの状態間の変化を定義することができる */
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: #85baef;
+      }
+    }
+
+    .css_acc:checked+.acc_show {
+      height: auto;
+      padding: 5px;
+      background: #eaeaea;
+      opacity: 1;
+    }
+  }
+
+  .acc_toggle {
+    .acc_toggle_content {
+      width: 400px;
+      height: auto;
+      margin: 30px 15px;
+      // float:left;
+      display: inline-block;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      h3 {
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+
+      .name {
+        margin-top: 0;
+      }
+
+      .text {
+        // visibility: hidden;
+        display: none;
+      }
+
+      .text-active {
+        display: block;
+      }
+    }
+  }
+}

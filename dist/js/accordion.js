@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 $(function() {
   console.log("salam!");
 
-  $('.box').click(function() {
+  $('.box_content').click(function() {
     $(this).toggleClass('circle');
   });
 

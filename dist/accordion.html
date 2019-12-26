@@ -14,11 +14,10 @@
 <body>
 
   <div class="container">
-    <div class="box" id="abc"></div>
     <h1>test</h1>
 
     <div class="accordion">
-      <p>素のJavaScript</p>
+      <h2>素のJavaScript</h2>
       <div class="acd_menu_head">グループ1</div>
       <ul class="acd_menu_body">
         <li class="item">アイテム1</li>
@@ -42,7 +41,7 @@
     </div>
 
     <div class="accordion">
-      <p>jQuery</p>
+      <h2>jQuery</h2>
       <div class="j_acd_menu_head">グループ1</div>
       <ul class="j_acd_menu_body">
         <li class="item">アイテム1</li>
@@ -66,9 +65,27 @@
       <!-- accordion -->
     </div>
 
+    <div class="accordion">
+      <div class="acc_toggle">
+        <h2>jQueryのtoggle</h2>
+        <div class="acc_toggle_content">
+          <img src="../src/img/illust_charlie-2-400x367.png" alt="チャーリー・ブラウン" class="img-hover" />
+          <h3>Charlie Brown</h3>
+          <p class="name">チャーリー・ブラウン</p>
+          <p class="text">「おなじみ」のチャーリー･ブラウンはジグザグTシャツを着た愛すべき敗者です。 全く勝ち目がなくても決してあきらめません。 全試合出場するものの負け続ける、世界最弱小の野球チームのマネージャーでもあります。 小さな赤毛の女の子には、期待しながらも話かける勇気をもつことができません。 友人から、タコ食いの木から、そして自分の犬にすら、つらい目にあったとしてもチャーリー･ブラウンはいつも妥協しないヒーローなのです。</p>
+        </div>
+        <div class="acc_toggle_content">
+          <img src="../src/img/illust_snoopy-1-400x338.png" alt="スヌーピー" class="img-hover" />
+          <h3>Snoopy</h3>
+          <p class="name">スヌーピー</p>
+          <p class="text">
+            非常に想像力に富み、いつも自信にあふれた、世界的に有名なこのビーグルは変装名人でもあります。ジョー･クールになっているときには、群れず、騒動にも身をおかず、いつも超然とした皆があこがれるようなカッコいい奴になります。また、第一次世界大戦のフライング・エースとして、悪名高きレッドバロンと空中戦を繰り広げます。一方、ドッグハウスの屋根で思索にふけっている時には、アメリカ文学の大作を書いたり、月に旅したり、そして隣の猫への復讐をたくらんだりしているのです。</p>
+        </div>
+      </div>
+    </div>
 
     <div class="accordion">
-      <p>HTMLのみ</p>
+      <h2>HTMLのみ</h2>
       <details>
         <summary>Quote1</summary>
         You play with the cards you're dealt. Whatever that means.
@@ -87,9 +104,10 @@
     </div>
 
     <div class="accordion">
+      <h2>HTMLとCSS</h2>
       <div class="acc_box">
         <!--ラベル1-->
-        <label for="label1">クリックして表示1</label>
+        <label for="label1">クリックして表示</label>
         <input type="checkbox" id="label1" class="css_acc" />
         <div class="acc_show">
           <!--ここに隠す中身-->

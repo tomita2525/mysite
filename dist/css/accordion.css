@@ -1,100 +1,134 @@
+@charset "UTF-8";
 body {
-  margin:15px;
+  margin: 15px;
 }
 
-  .container {
-    width:100%;
-    margin: 0 auto;
-  }
-
-.box {
-  width:100px;
-  height:100px;
-  background-color:#EBE2FF;
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 
-.circle {
-  border-radius:50%;
-  background-color:#B2EAE8;
+.container .box {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #949494;
+  background-color: #EBE2FF;
 }
 
-.accordion {
+.container .circle {
+  border-radius: 50%;
+  background-color: #B2EAE8;
+}
+
+.container .accordion {
   /* width:400px; */
-  width:100%;
+  width: 100%;
   /* height:400px; */
-  padding:25px;
+  padding: 25px;
 }
 
-.acd_menu_head {
+.container .acd_menu_head {
   width: 400px;
-  padding:10px 40px;
-  background-color:#DFE5DE;
-  border-radius:10px;
-  border:1px solid #FC8341;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: #DFE5DE;
+  border: 1px solid #FC8341;
 }
 
-.j_acd_menu_head {
-  width:400px;
-  padding:10px 40px;
-  background-color:#e9e5fa;
-  border-radius:10px;
-  border:1px solid #f0f8ff;
+.container .j_acd_menu_head {
+  width: 400px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: #e9e5fa;
+  border: 1px solid #f0f8ff;
 }
 
-/* 複数クラスに対し同じCSSを適用させる場合、カンマ（,）で区切る */
-.acd_menu_body,.j_acd_menu_body {
-  width:400px;
-  padding:0px 0px 0px 15px;
-  border-left:17px solid #bababa;
-  margin:0 0 0 20px;
-  background-color:#F4F4F4;
+.container .acd_menu_body,
+.container .j_acd_menu_body {
+  width: 400px;
+  padding: 0 0 0 15px;
+  border-left: 17px solid #bababa;
+  margin: 0 0 0 20px;
+  background-color: #F4F4F4;
 }
 
-ul {
-  display:none;
+.container ul {
+  display: none;
 }
 
-li {
-  list-style-type:none;
+.container ul li {
+  list-style-type: none;
 }
 
-.open {
-  display:block;
+.container .open {
+  display: block;
 }
 
-.acc_box .acc_show {
-    height: 0;
-    padding: 0;
-    /* overflow...ボックス内に収まり切らない内容を、どのように処理するかを指定するプロパティ */
-    overflow: hidden;
-    opacity: 0;
-    transition: 0.8s;
+.container .acc_box {
+  width: 300px;
 }
 
-.acc_box input {
-  display:none;
+.container .acc_box .acc_show {
+  height: 0;
+  padding: 0;
+  /* overflow...ボックス内に収まり切らない内容を、どのように処理するかを指定するプロパティ */
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
 }
 
-.acc_box label {
-    display: block;
-    margin: 1.5px 0;
-    padding : 11px 12px;
-    color :#2f8fcf;
-    font-weight: bold;
-    background :#a4cbf3;
-    cursor :pointer;
-    /* transition...要素の2つの状態間の変化を定義することができる */
-    transition: all 0.5s;
+.container .acc_box input {
+  display: none;
 }
 
-.acc_box label:hover {
-    background :#85baef;
+.container .acc_box label {
+  display: block;
+  margin: 1.5px 0;
+  padding: 11px 12px;
+  color: #2f8fcf;
+  font-weight: bold;
+  background: #a4cbf3;
+  cursor: pointer;
+  /* transition...要素の2つの状態間の変化を定義することができる */
+  transition: all 0.5s;
 }
 
-/* クリックで中身表示 */
-.css_acc:checked + .acc_show {
-    height: auto;
-    padding: 5px;
-    background: #eaeaea;
-    opacity: 1;
+.container .acc_box label:hover {
+  background-color: #85baef;
+}
+
+.container .acc_box .css_acc:checked + .acc_show {
+  height: auto;
+  padding: 5px;
+  background: #eaeaea;
+  opacity: 1;
+}
+
+.container .acc_toggle .acc_toggle_content {
+  width: 400px;
+  height: auto;
+  margin: 30px 15px;
+  display: inline-block;
+}
+
+.container .acc_toggle .acc_toggle_content img {
+  width: 200px;
+  height: 200px;
+}
+
+.container .acc_toggle .acc_toggle_content h3 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.container .acc_toggle .acc_toggle_content .name {
+  margin-top: 0;
+}
+
+.container .acc_toggle .acc_toggle_content .text {
+  display: none;
+}
+
+.container .acc_toggle .acc_toggle_content .text-active {
+  display: block;
 }

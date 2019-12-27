@@ -8,10 +8,37 @@ body {
 
 .box_contents {
   width: 100%;
+  margin:10px 0;
+}
+
+.box_contents_1 {
+  width: 100%;
+  margin:10px 0;
+  text-align: center;
+}
+
+.box_contents_2 {
+  display: flex;
+  align-items: center;
+}
+
+.box_contents_2_p,.box_contents_3_p {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .box {
+  /* width:208px; */
   margin: 10px auto;
+}
+
+.box_1 {
+  display: inline-block;
+}
+
+.box_3 {
+  width:220px;
+  margin:0 auto;
 }
 
 .box_content {
